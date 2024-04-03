@@ -1,0 +1,30 @@
+@keyframes slideIn {
+    to {
+      left: 20px;
+    }
+  }
+  
+  .alert {
+    position: fixed;
+    bottom: 20px;
+    left: -100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: slideIn 0.5s forwards;
+    &.success {
+      background-color: lightgreen;
+      color: darkgreen;
+    }
+  
+    &.update {
+      background-color: lightblue;
+      color: navy;
+    }
+  
+    &.delete {
+      background-color: pink;
+      color: darkred;
+    }
+  }
+  

@@ -1,0 +1,136 @@
+/* src/Chatbot.scss */
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+    background-color: #d2d2d2;
+    .chatbot-container {
+        display: flex;
+        flex-direction: column;
+        height: 96%;
+        width: 80%;
+        margin: 12px;
+        border: 1px solid #bc3030;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        .chat-history {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            background: #e9e9eb;
+            max-width: 75%;
+          }
+          
+          .bot {
+            align-self: flex-start;
+            background: #e9e9eb; /* Light grey background for bot messages */
+          }
+          
+          .user {
+            align-self: flex-end;
+            background: #0056b3; /* Blue background for user messages */
+            color: white;
+          }
+          
+          .chat-input {
+            padding: 10px;
+            background: #f8f8f8; /* Slightly grey background for the input area */
+            border-top: 1px solid #ddd;
+          }
+          
+          .chat-input input {
+            width: 100%;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box;
+          }
+          
+          .chat-input button {
+            padding: 10px 20px;
+            margin-left: 12px;
+            background-color: #28a745; /* Green background for a call-to-action button */
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            
+            &:hover {
+              background-color: #218838; /* Darker green on hover for the button */
+            }
+          }
+          
+          /* Placeholder for future conversation history styling */
+          .conversation-history {
+            /* Additional styles here */
+          }
+          
+          /* Use common sense to style the date, time, and any other chat metadata */
+          .date, .time {
+            color: #999;
+            margin: 5px 0;
+            font-size: 0.75em;
+            text-align: right;
+          }
+          
+          /* Responsive adjustments */
+          @media (max-width: 768px) {
+            .chatbot-container {
+              width: 95%;
+              height: auto;
+            }
+          
+            .chat-input input, .chat-input button {
+              width: 100%; /* Full width on small screens */
+            }
+          }
+          
+      }
+    .chathistory-container{
+min-width: 300px;
+background: #bebebe;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 12px;
+border-radius: 12px;
+header{
+
+}
+footer{
+display: flex;
+justify-content: space-between;
+    img{
+        height: 40px;
+        border-radius: 50%;
+    }
+button{
+  padding: 13px;
+  height: 40px;
+  border: none;
+  background: aquamarine;
+  border-radius: 5px;
+}
+}
+    }
+ 
+    .hotel-card{
+      width: 600px;
+    }
+  
+    .inputFinal{
+      display: flex;
+    }
+}
