@@ -151,7 +151,7 @@ function Chatbot() {
     } else {
       setIsLoading(true);
       try {
-        const response = await axios.post("http://127.0.0.1:8000/recommend", updatedUserData);
+        const response = await axios.post("https://journeybuddy-backend.onrender.com/recommend", updatedUserData);
         setIsLoading(false);
 
         const hotelNamesNormalized = response.data.response.message.content
@@ -185,7 +185,7 @@ function Chatbot() {
 
     try {
       const payload = { query: value };
-      const response = await axios.post("http://127.0.0.1:8000/qna", payload);
+      const response = await axios.post("https://journeybuddy-backend.onrender.com/qna", payload);
       setIsLoading(false);
 
       const newHistory = [...chatHistory, { by: "user", message: value }];

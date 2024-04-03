@@ -13,7 +13,7 @@ function Register() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/register', { email, password });
+      const response = await axios.post('https://journeybuddy-backend.onrender.com/register', { email, password });
       setAlert({ message: response.data.message, type: 'success', show: true });
       setTimeout(() => navigate('/dashboard'), 2000);
     } catch (error) {
